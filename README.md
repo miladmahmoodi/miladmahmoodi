@@ -1,4 +1,4 @@
-<!-- Last built: Sun Jul 12 2026 17:20:52 UTC -->
+<!-- Last built: Sun Jul 12 2026 17:33:21 UTC -->
 
 <div align="center">
   <img src="themes/terminal/assets/header.svg" width="100%" alt="Milad Mahmoodi" />
@@ -41,6 +41,8 @@ miladmahmoodi@github:~$ _
 
 
 
+<br>
+
 ```
 miladmahmoodi@github:~$ stack
 
@@ -54,6 +56,8 @@ miladmahmoodi@github:~$ _
 ```
 
 
+<br>
+
 ```
 miladmahmoodi@github:~$ projects
 
@@ -64,6 +68,8 @@ miladmahmoodi@github:~$ projects
 miladmahmoodi@github:~$ _
 ```
 
+
+<br>
 
 ```
 miladmahmoodi@github:~$ timeline
@@ -82,6 +88,8 @@ miladmahmoodi@github:~$ timeline
 miladmahmoodi@github:~$ _
 ```
 
+
+<br>
 
 <details>
 <summary><code>secret</code></summary>
