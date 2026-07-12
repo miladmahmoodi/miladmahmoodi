@@ -3,7 +3,7 @@ package main
 import (
 	"embed"
 
-	"github.com/miladmahmoodi/forge/cmd"
+	"github.com/miladmahmoodi/miladmahmoodi/cmd"
 )
 
 //go:embed themes

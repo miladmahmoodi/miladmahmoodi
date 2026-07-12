@@ -11,7 +11,7 @@ import (
 
 	"go.yaml.in/yaml/v4"
 
-	"github.com/miladmahmoodi/forge/internal/config"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/config"
 )
 
 // Theme is the interface every Forge theme must satisfy.

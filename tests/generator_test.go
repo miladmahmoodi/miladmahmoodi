@@ -7,7 +7,7 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/miladmahmoodi/forge/internal/generator"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/generator"
 )
 
 // minimalThemeFS builds an in-memory FS with a minimal terminal theme for tests.

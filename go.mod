@@ -1,4 +1,4 @@
-module github.com/miladmahmoodi/forge
+module github.com/miladmahmoodi/miladmahmoodi
 
 go 1.25.0
 

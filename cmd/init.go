@@ -63,7 +63,7 @@ func prompt(r *bufio.Reader, label string) string {
 func buildInitConfig(name, username, role, company, location, website, twitter string) string {
 	var sb strings.Builder
 
-	sb.WriteString("# Forge config — https://github.com/miladmahmoodi/forge\n")
+	sb.WriteString("# Forge config — https://github.com/miladmahmoodi/miladmahmoodi\n")
 	sb.WriteString("# Edit this file, then run: forge build\n\n")
 
 	sb.WriteString(fmt.Sprintf("name:     %q\n", name))

@@ -26,7 +26,7 @@ var rootCmd = &cobra.Command{
   ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 
   Build developer profiles, not README files.
-  https://github.com/miladmahmoodi/forge`,
+  https://github.com/miladmahmoodi/miladmahmoodi`,
 	SilenceUsage:  true,
 	SilenceErrors: true,
 }

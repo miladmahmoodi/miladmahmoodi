@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/miladmahmoodi/forge/internal/plugin"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/plugin"
 )
 
 var pluginCmd = &cobra.Command{

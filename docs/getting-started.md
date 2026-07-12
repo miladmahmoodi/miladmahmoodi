@@ -5,15 +5,15 @@ Build your GitHub profile in under a minute.
 ## Install
 
 ```bash
-go install github.com/miladmahmoodi/forge@latest
+git clone https://github.com/miladmahmoodi/miladmahmoodi
+cd miladmahmoodi
+make install
 ```
 
-Or build from source:
+Or install directly with Go:
 
 ```bash
-git clone https://github.com/miladmahmoodi/forge
-cd forge
-make install
+go install github.com/miladmahmoodi/miladmahmoodi@latest
 ```
 
 ## Quick Start
@@ -86,8 +86,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with: { go-version: "1.26" }
-      - run: go install github.com/miladmahmoodi/forge@latest
-      - run: forge build
+      - run: go build -o forge .
+      - run: ./forge build
       - run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

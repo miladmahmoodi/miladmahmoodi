@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/miladmahmoodi/forge/internal/theme"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/theme"
 )
 
 var themeCmd = &cobra.Command{

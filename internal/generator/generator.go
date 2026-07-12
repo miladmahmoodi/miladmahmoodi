@@ -6,9 +6,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/miladmahmoodi/forge/internal/config"
-	"github.com/miladmahmoodi/forge/internal/plugin"
-	"github.com/miladmahmoodi/forge/internal/theme"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/config"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/plugin"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/theme"
 )
 
 const forgeVersion = "0.1.0"

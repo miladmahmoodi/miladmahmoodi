@@ -5,8 +5,8 @@ import (
 	"testing"
 	"testing/fstest"
 
-	"github.com/miladmahmoodi/forge/internal/config"
-	"github.com/miladmahmoodi/forge/internal/theme"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/config"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/theme"
 )
 
 func TestThemeLoad_EmbeddedTheme(t *testing.T) {

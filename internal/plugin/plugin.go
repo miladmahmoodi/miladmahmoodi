@@ -3,7 +3,7 @@ package plugin
 import (
 	"fmt"
 
-	"github.com/miladmahmoodi/forge/internal/config"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/config"
 )
 
 // Plugin is the interface every Forge plugin must implement.

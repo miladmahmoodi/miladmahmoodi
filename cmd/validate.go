@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/miladmahmoodi/forge/internal/config"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/config"
 )
 
 var validateConfig string

@@ -25,12 +25,13 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: "1.26"
+          cache: true
 
-      - name: Install Forge
-        run: go install github.com/miladmahmoodi/forge@latest
+      - name: Build Forge
+        run: go build -o forge .
 
-      - name: Build README
-        run: forge build --config config.yml
+      - name: Generate README
+        run: ./forge build --config config.yml
 
       - name: Commit README
         run: |

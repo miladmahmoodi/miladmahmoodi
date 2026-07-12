@@ -11,7 +11,7 @@ import (
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/cobra"
 
-	"github.com/miladmahmoodi/forge/internal/generator"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/generator"
 )
 
 func jsonEscape(s string) string {
@@ -135,7 +135,7 @@ const previewHTML = `<!DOCTYPE html>
       font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px;
       color: #8b949e;
     }
-    .forge-bar .dot { width: 8px; height: 8px; border-radius: 50%; background: #3fb950; }
+    .forge-bar .dot { width: 8px; height: 8px; border-radius: 50%%; background: #3fb950; }
     .forge-bar .live { color: #3fb950; }
     body { padding-top: 37px; }
   </style>

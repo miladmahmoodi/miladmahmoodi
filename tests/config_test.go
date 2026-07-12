@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/miladmahmoodi/forge/internal/config"
+	"github.com/miladmahmoodi/miladmahmoodi/internal/config"
 )
 
 func TestLoad_ValidConfig(t *testing.T) {
