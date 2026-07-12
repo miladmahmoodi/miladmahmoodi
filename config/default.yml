@@ -1,0 +1,57 @@
+# Forge default configuration schema
+# This file documents all available fields and their defaults.
+# Copy this to your profile repo and rename it to config.yml.
+
+# ── Identity (required) ───────────────────────────────────────────────────────
+name:     ""         # Your full name
+username: ""         # Your GitHub username
+role:     ""         # Your title (e.g. "Backend Engineer")
+
+# ── Identity (optional) ───────────────────────────────────────────────────────
+company:  ""         # Company or organization
+location: ""         # City, Country
+website:  ""         # https://yoursite.dev
+bio:      ""         # One sentence about you
+
+# ── Theme ─────────────────────────────────────────────────────────────────────
+theme: terminal      # terminal | minimal | dashboard | docs | retro | hacker
+
+# ── Socials ───────────────────────────────────────────────────────────────────
+socials: []
+# - platform: github
+#   handle:   "username"
+#   url:      "https://github.com/username"
+
+# ── Skills ────────────────────────────────────────────────────────────────────
+skills: []
+# - category: Languages
+#   items: [Go, Python, TypeScript]
+
+# ── Projects ──────────────────────────────────────────────────────────────────
+projects: []
+# - name:        "project-name"
+#   description: "What it does"
+#   url:         "https://github.com/you/project"
+#   language:    "Go"
+#   stars:       0
+#   featured:    true
+#   tags: []
+
+# ── Timeline ──────────────────────────────────────────────────────────────────
+timeline: []
+# - year:        "2024"
+#   title:       "Something important"
+#   description: "Context"
+
+# ── Contact ───────────────────────────────────────────────────────────────────
+contact:
+  email:   ""
+  twitter: ""
+  discord: ""
+
+# ── Plugins ───────────────────────────────────────────────────────────────────
+plugins: []
+# - name:    github-activity
+#   enabled: true
+#   options:
+#     limit: 5

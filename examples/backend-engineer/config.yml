@@ -1,0 +1,78 @@
+# Forge example — Backend Engineer
+# https://github.com/miladmahmoodi/forge
+
+name:     "Alex Chen"
+username: "alexchen"
+role:     "Senior Backend Engineer"
+company:  "Stripe"
+location: "San Francisco, CA"
+website:  "https://alexchen.dev"
+bio:      "I design distributed systems that stay up at 3am and APIs that don't embarrass me."
+
+theme: terminal
+
+socials:
+  - platform: github
+    handle:   "alexchen"
+    url:      "https://github.com/alexchen"
+  - platform: twitter
+    handle:   "@alexchen_dev"
+    url:      "https://twitter.com/alexchen_dev"
+  - platform: linkedin
+    handle:   "alexchen"
+    url:      "https://linkedin.com/in/alexchen"
+
+skills:
+  - category: "Languages"
+    items: [Go, Rust, Python, SQL]
+  - category: "Frameworks"
+    items: [gin, axum, FastAPI, gRPC]
+  - category: "Databases"
+    items: [PostgreSQL, Redis, CockroachDB, Kafka]
+  - category: "DevOps"
+    items: [Kubernetes, Terraform, Prometheus, Grafana]
+  - category: "Cloud"
+    items: [AWS, GCP]
+
+projects:
+  - name:        "distrib"
+    description: "Distributed key-value store with Raft consensus"
+    url:         "https://github.com/alexchen/distrib"
+    language:    "Go"
+    stars:       847
+    featured:    true
+    tags: [distributed-systems, raft, consensus]
+
+  - name:        "pgstream"
+    description: "Zero-downtime PostgreSQL schema migrations"
+    url:         "https://github.com/alexchen/pgstream"
+    language:    "Go"
+    stars:       312
+    featured:    true
+    tags: [postgresql, migrations, devtools]
+
+  - name:        "ratelimit"
+    description: "Token bucket and sliding window rate limiters for Go"
+    url:         "https://github.com/alexchen/ratelimit"
+    language:    "Go"
+    stars:       194
+    featured:    false
+
+timeline:
+  - year:        "2023"
+    title:       "Senior Backend Engineer at Stripe"
+    description: "Payments infrastructure at scale"
+  - year:        "2021"
+    title:       "Open sourced distrib"
+    description: "847 stars and counting"
+  - year:        "2020"
+    title:       "Backend Engineer at Cloudflare"
+    description: "Edge networking and DDoS mitigation"
+  - year:        "2018"
+    title:       "Started writing Go"
+
+contact:
+  email:   "alex@alexchen.dev"
+  twitter: "@alexchen_dev"
+
+plugins: []

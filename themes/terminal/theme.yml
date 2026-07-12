@@ -1,0 +1,5 @@
+name:        terminal
+description: Polished Linux terminal aesthetic
+author:      Forge
+version:     0.1.0
+default:     true

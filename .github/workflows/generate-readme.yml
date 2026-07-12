@@ -1,0 +1,43 @@
+name: Generate README
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - "config.yml"
+      - "themes/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.26"
+
+      - name: Install Forge
+        run: go install github.com/miladmahmoodi/forge@latest
+
+      - name: Build README
+        run: forge build --config config.yml
+
+      - name: Commit README
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || (
+            git add README.md
+            git commit -m "chore: regenerate profile [forge] [skip ci]"
+            git push
+          )

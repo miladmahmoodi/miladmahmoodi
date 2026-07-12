@@ -1,0 +1,61 @@
+# Forge example — Frontend Engineer
+# https://github.com/miladmahmoodi/forge
+
+name:     "Sara Kim"
+username: "sarakim"
+role:     "Frontend Engineer"
+company:  "Vercel"
+location: "Remote"
+website:  "https://sarakim.io"
+bio:      "I make pixels behave. Performance, accessibility, and beautiful UIs."
+
+theme: minimal
+
+socials:
+  - platform: github
+    handle:   "sarakim"
+    url:      "https://github.com/sarakim"
+  - platform: twitter
+    handle:   "@sarakim_ui"
+    url:      "https://twitter.com/sarakim_ui"
+
+skills:
+  - category: "Languages"
+    items: [TypeScript, JavaScript, CSS, HTML]
+  - category: "Frameworks"
+    items: [React, Next.js, Remix, Svelte]
+  - category: "Tooling"
+    items: [Vite, Webpack, Turbopack, Storybook]
+  - category: "Design"
+    items: [Figma, Tailwind CSS, Framer Motion]
+
+projects:
+  - name:        "motion-primitives"
+    description: "Composable animation primitives for React"
+    url:         "https://github.com/sarakim/motion-primitives"
+    language:    "TypeScript"
+    stars:       2100
+    featured:    true
+    tags: [react, animation, ui]
+
+  - name:        "css-reset"
+    description: "Opinionated modern CSS reset"
+    url:         "https://github.com/sarakim/css-reset"
+    language:    "CSS"
+    stars:       561
+    featured:    false
+
+timeline:
+  - year:        "2023"
+    title:       "Joined Vercel"
+  - year:        "2022"
+    title:       "Released motion-primitives"
+    description: "2100 stars in 6 months"
+  - year:        "2020"
+    title:       "Frontend Engineer at Linear"
+
+contact:
+  email:   "sara@sarakim.io"
+  twitter: "@sarakim_ui"
+
+plugins: []

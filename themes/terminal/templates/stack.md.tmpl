@@ -1,0 +1,13 @@
+## `$ stack`
+
+```
+{{.Config.Username}}@forge:~$ stack
+{{$w := maxCatLen .Config.Skills}}
+{{- range .Config.Skills}}
+  {{pad $w .Category}}{{range $i, $item := .Items}}{{if $i}} · {{end}}{{$item}}{{end}}
+{{- end}}
+
+{{.Config.Username}}@forge:~$ _
+```
+
+---

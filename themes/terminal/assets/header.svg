@@ -1,0 +1,80 @@
+<svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Forge terminal header">
+  <title>Forge — Build developer profiles, not README files.</title>
+
+  <style>
+    .window   { fill: #0d1117; }
+    .titlebar { fill: #161b22; }
+    .mono     { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
+    .dim      { fill: #484f58; }
+    .u        { fill: #3fb950; }
+    .at       { fill: #8b949e; }
+    .host     { fill: #58a6ff; }
+    .sym      { fill: #8b949e; }
+    .cmd      { fill: #e6edf3; }
+    .out      { fill: #8b949e; }
+    .ok       { fill: #3fb950; }
+    .cursor   { fill: #58a6ff; }
+    .border   { fill: none; stroke: #30363d; stroke-width: 1; }
+
+    @keyframes blink {
+      0%, 49%   { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes appear1 { 0%,39%  { opacity:0; } 40%,100% { opacity:1; } }
+    @keyframes appear2 { 0%,54%  { opacity:0; } 55%,100% { opacity:1; } }
+    @keyframes appear3 { 0%,67%  { opacity:0; } 68%,100% { opacity:1; } }
+    @keyframes appear4 { 0%,77%  { opacity:0; } 78%,100% { opacity:1; } }
+    @keyframes slide   {
+      0%,39%        { transform: translateX(0);     }
+      40%,54%       { transform: translateX(9px);   }
+      55%,67%       { transform: translateX(18px);  }
+      68%,77%       { transform: translateX(27px);  }
+      78%,100%      { transform: translateX(36px);  }
+    }
+
+    .blink  { animation: blink   1.1s step-end infinite; }
+    .c1     { animation: appear1 5s linear   infinite; }
+    .c2     { animation: appear2 5s linear   infinite; }
+    .c3     { animation: appear3 5s linear   infinite; }
+    .c4     { animation: appear4 5s linear   infinite; }
+    .slide  { animation: slide   5s linear   infinite; }
+  </style>
+
+  <!-- Window chrome -->
+  <rect width="800" height="220" rx="8" class="window"/>
+  <rect width="800" height="220" rx="8" class="border"/>
+  <rect width="800" height="36" rx="8" class="titlebar"/>
+  <rect y="26" width="800" height="10" class="titlebar"/>
+
+  <!-- Traffic lights -->
+  <circle cx="22" cy="18" r="6" fill="#f85149"/>
+  <circle cx="44" cy="18" r="6" fill="#d29922"/>
+  <circle cx="66" cy="18" r="6" fill="#3fb950"/>
+
+  <!-- Title -->
+  <text x="400" y="23" text-anchor="middle" class="mono dim" font-size="12">forge — terminal — 80×24</text>
+
+  <!-- Login line -->
+  <text x="20" y="68" class="mono dim" font-size="13">Last login: from github.com on pts/0</text>
+
+  <!-- Static prompt: forge build -->
+  <text x="20" y="96" font-size="14" class="mono">
+    <tspan class="u">milad</tspan><tspan class="at">@</tspan><tspan class="host">forge</tspan><tspan class="sym">:~$ </tspan><tspan class="cmd">forge build</tspan>
+  </text>
+
+  <!-- Build output -->
+  <text x="20" y="118" class="mono out" font-size="12.5">  config    config.yml</text>
+  <text x="20" y="136" class="mono out" font-size="12.5">  theme     terminal</text>
+  <text x="20" y="154" class="mono out" font-size="12.5">  output    README.md <tspan class="ok">(3.2 KB)</tspan></text>
+  <text x="20" y="172" class="mono ok"  font-size="12.5">  done in  2ms</text>
+
+  <!-- Typing prompt -->
+  <text x="20" y="200" font-size="14" class="mono">
+    <tspan class="u">milad</tspan><tspan class="at">@</tspan><tspan class="host">forge</tspan><tspan class="sym">:~$ </tspan><tspan class="cmd c1">h</tspan><tspan class="cmd c2">e</tspan><tspan class="cmd c3">l</tspan><tspan class="cmd c4">p</tspan>
+  </text>
+
+  <!-- Blinking cursor that moves with typed chars -->
+  <g class="slide">
+    <rect x="95" y="188" width="9" height="15" class="cursor blink" rx="1"/>
+  </g>
+</svg>

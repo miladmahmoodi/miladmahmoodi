@@ -1,0 +1,20 @@
+## `$ projects`
+{{range .Config.Projects}}{{if .Featured}}
+### ⬡ [{{.Name}}]({{.URL}})
+
+> {{.Description | trim}}
+
+{{if .Language}}`{{.Language}}`{{end}}{{if .Stars}} &nbsp; ⭐ {{.Stars}}{{end}}{{if .Tags}}{{range .Tags}} &nbsp; `{{.}}`{{end}}{{end}}
+{{end}}{{end}}
+<details>
+<summary>View all {{len .Config.Projects}} projects</summary>
+<br>
+
+| Project | Description | Language |
+|---------|-------------|----------|
+{{range .Config.Projects -}}
+| [**{{.Name}}**]({{.URL}}) | {{.Description | trim}} | `{{.Language}}` |
+{{end}}
+</details>
+
+---

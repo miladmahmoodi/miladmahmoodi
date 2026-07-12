@@ -1,0 +1,128 @@
+# Forge config — https://github.com/miladmahmoodi/forge
+# Edit this file, then run: forge build
+
+name: "Milad Mahmoodi"
+username: "miladmahmoodi"
+
+role: "Backend Software Engineer"
+
+company: "Smartech"
+
+location: "Tehran, Iran"
+
+website: "https://github.com/miladmahmoodi"
+
+bio: >
+  Backend Software Engineer focused on Python, distributed systems,
+  and building production-ready backend services.
+  Currently working on AdTech platforms and maintaining ArchiPy,
+  an open-source framework for clean backend architecture.
+
+theme: terminal
+
+socials:
+  - platform: github
+    handle: miladmahmoodi
+    url: https://github.com/miladmahmoodi
+
+  - platform: linkedin
+    handle: milad-mahmoodi
+    url: https://linkedin.com/in/milad-mahmoodi
+
+skills:
+
+  - category: Languages
+    items:
+      - Python
+      - SQL
+
+  - category: Backend
+    items:
+      - FastAPI
+      - REST APIs
+      - gRPC
+      - Pydantic
+
+  - category: Distributed Systems
+    items:
+      - Apache Kafka
+      - Microservices
+      - Event-Driven Architecture
+      - Temporal
+
+  - category: Databases
+    items:
+      - PostgreSQL
+      - Redis
+      - ScyllaDB
+      - Elasticsearch
+      - StarRocks
+
+  - category: Infrastructure
+    items:
+      - Docker
+      - Kubernetes
+      - Linux
+      - Grafana
+      - Git
+
+projects:
+
+  - name: ArchiPy
+    description: >
+      Open-source Python framework focused on clean architecture,
+      modular backend applications, and maintainable software design.
+    url: https://github.com/miladmahmoodi/ArchiPy
+    language: Python
+    featured: true
+    tags:
+      - clean-architecture
+      - python
+      - backend
+      - framework
+
+  - name: Forge
+    description: >
+      Developer profile engine that generates GitHub profiles from a single configuration.
+    url: https://github.com/miladmahmoodi/forge
+    language: Go
+    featured: true
+    tags:
+      - cli
+      - developer-tools
+      - github-profile
+
+timeline:
+
+  - year: "2025"
+    title: "Backend Engineer @ Smartech"
+    description: >
+      Building distributed backend services for AdTech platforms using
+      Python, Kafka, gRPC, Kubernetes, and PostgreSQL.
+
+  - year: "2024"
+    title: "Backend Engineer @ Invex"
+    description: >
+      Developed backend services and ETL pipelines for a cryptocurrency exchange.
+
+  - year: "2023"
+    title: "Joined my first professional engineering team"
+    description: >
+      Started working on production systems after completing my internship.
+
+  - year: "2023"
+    title: "Backend Developer @ Narvan"
+    description: >
+      Built backend services for startup products using Python.
+
+  - year: "2022"
+    title: "Started my backend journey"
+    description: >
+      Learned Python, Linux, Git, databases, and software engineering fundamentals.
+
+contact:
+  email: ""
+  twitter: ""
+  discord: ""
+
+plugins: []

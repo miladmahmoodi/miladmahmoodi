@@ -1,0 +1,13 @@
+## `$ timeline`
+
+```
+{{.Config.Username}}@forge:~$ timeline
+{{range .Config.Timeline}}
+{{.Year}}  →  {{.Title | trim}}{{if .Description}}
+        {{.Description | trim}}{{end}}
+{{- end}}
+
+{{.Config.Username}}@forge:~$ _
+```
+
+---

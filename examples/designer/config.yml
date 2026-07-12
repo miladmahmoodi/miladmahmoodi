@@ -1,0 +1,49 @@
+# Forge example — Designer / Design Engineer
+# https://github.com/miladmahmoodi/forge
+
+name:     "Jordan Rivera"
+username: "jordanrivera"
+role:     "Design Engineer"
+company:  "Linear"
+location: "New York, NY"
+website:  "https://jordanrivera.design"
+bio:      "I live at the intersection of design and engineering. Pixels, systems, and code."
+
+theme: minimal
+
+socials:
+  - platform: github
+    handle:   "jordanrivera"
+    url:      "https://github.com/jordanrivera"
+  - platform: twitter
+    handle:   "@jordanrivera"
+    url:      "https://twitter.com/jordanrivera"
+
+skills:
+  - category: "Design"
+    items: [Figma, Framer, Principle, After Effects]
+  - category: "Code"
+    items: [TypeScript, React, CSS, SVG]
+  - category: "Systems"
+    items: [Design Tokens, Storybook, Radix UI, Stitches]
+
+projects:
+  - name:        "design-system-kit"
+    description: "Production-ready design system starter"
+    url:         "https://github.com/jordanrivera/design-system-kit"
+    language:    "TypeScript"
+    stars:       1400
+    featured:    true
+    tags: [design-system, react, components]
+
+timeline:
+  - year:        "2023"
+    title:       "Design Engineer at Linear"
+  - year:        "2022"
+    title:       "Released design-system-kit"
+
+contact:
+  email:   "hey@jordanrivera.design"
+  twitter: "@jordanrivera"
+
+plugins: []

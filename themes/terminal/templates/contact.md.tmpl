@@ -1,0 +1,14 @@
+## `$ contact`
+
+```
+{{.Config.Username}}@forge:~$ contact
+{{if .Config.Contact.Email}}
+  email    →  {{.Config.Contact.Email}}{{end}}
+{{if .Config.Contact.Twitter}}  twitter  →  {{.Config.Contact.Twitter}}{{end}}
+{{if .Config.Contact.Discord}}  discord  →  {{.Config.Contact.Discord}}{{end}}
+  github   →  github.com/{{.Config.Username}}
+
+{{.Config.Username}}@forge:~$ _
+```
+
+---

@@ -1,0 +1,62 @@
+# Forge example — Student
+# https://github.com/miladmahmoodi/forge
+
+name:     "Jamie Park"
+username: "jamiepark"
+role:     "CS Student"
+company:  "MIT"
+location: "Cambridge, MA"
+website:  "https://jamiepark.me"
+bio:      "Junior @ MIT studying CS. I love compilers, distributed systems, and building things."
+
+theme: terminal
+
+socials:
+  - platform: github
+    handle:   "jamiepark"
+    url:      "https://github.com/jamiepark"
+  - platform: twitter
+    handle:   "@jamiepark_cs"
+    url:      "https://twitter.com/jamiepark_cs"
+
+skills:
+  - category: "Languages"
+    items: [Python, C, Java, JavaScript]
+  - category: "Learning"
+    items: [Go, Rust, Haskell]
+  - category: "Tools"
+    items: [Git, Linux, Docker, VS Code]
+
+projects:
+  - name:        "tinydb"
+    description: "A toy database engine built from scratch in C"
+    url:         "https://github.com/jamiepark/tinydb"
+    language:    "C"
+    stars:       43
+    featured:    true
+    tags: [database, systems, learning]
+
+  - name:        "brainfuck-jit"
+    description: "Brainfuck JIT compiler in Python"
+    url:         "https://github.com/jamiepark/brainfuck-jit"
+    language:    "Python"
+    stars:       12
+    featured:    false
+
+timeline:
+  - year:        "2024"
+    title:       "Junior year at MIT"
+  - year:        "2023"
+    title:       "Built tinydb"
+    description: "Learned more from this than any class"
+  - year:        "2022"
+    title:       "First internship"
+    description: "Backend at a startup in Boston"
+  - year:        "2021"
+    title:       "Started at MIT"
+
+contact:
+  email:   "jamie@jamiepark.me"
+  twitter: "@jamiepark_cs"
+
+plugins: []
