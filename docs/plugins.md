@@ -1,6 +1,6 @@
 # Plugins
 
-Plugins extend Forge with dynamic content fetched at build time.
+Plugins extend profilegen with dynamic content fetched at build time.
 
 ## Using Plugins
 
@@ -31,7 +31,7 @@ plugins:
 ## Available Plugins
 
 ```bash
-forge plugin list
+profilegen plugin list
 ```
 
 | Plugin            | Description                        | Status       |
@@ -52,7 +52,7 @@ Implement the `Plugin` interface:
 ```go
 package myplugin
 
-import "github.com/miladmahmoodi/forge/internal/config"
+import "github.com/miladmahmoodi/profilegen/internal/config"
 
 type MyPlugin struct{}
 
@@ -64,7 +64,7 @@ func (p *MyPlugin) Render(cfg *config.Config, opts map[string]any) (string, erro
 }
 ```
 
-Register it in your theme or via a Forge plugin extension point (v0.2.0).
+Register it in your theme or via a profilegen plugin extension point (v0.2.0).
 
 ## Plugin Output
 

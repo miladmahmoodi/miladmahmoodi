@@ -7,5 +7,10 @@ Thumbs.db
 
 # Editor
 .vscode/
+.idea/
 *.swp
 *.swo
+
+# Built binaries
+forge
+profilegen

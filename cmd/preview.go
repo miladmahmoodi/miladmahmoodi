@@ -29,10 +29,10 @@ var previewCmd = &cobra.Command{
 	Short: "Serve a live preview at localhost:4000",
 	Long: `Launches a local HTTP server that renders your profile in real time.
 Changes to config.yml are detected automatically and the preview updates.`,
-	Example: `  forge preview
-  forge preview --port 8080`,
+	Example: `  profilegen preview
+  profilegen preview --port 8080`,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		tmpFile := filepath.Join(os.TempDir(), "forge-preview.md")
+		tmpFile := filepath.Join(os.TempDir(), "profilegen-preview.md")
 
 		if err := runBuild(previewConfig, tmpFile); err != nil {
 			return err
@@ -74,7 +74,7 @@ Changes to config.yml are detected automatically and the preview updates.`,
 		}()
 
 		addr := ":" + previewPort
-		fmt.Printf("  forge preview\n")
+		fmt.Printf("  profilegen preview\n")
 		fmt.Printf("  serving http://localhost:%s\n", previewPort)
 		fmt.Printf("  watching %s\n", previewConfig)
 		fmt.Println("  press Ctrl+C to stop")
@@ -117,7 +117,7 @@ const previewHTML = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forge Preview</title>
+  <title>Profile Preview</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.6.1/github-markdown-dark.min.css">
   <style>
@@ -128,22 +128,22 @@ const previewHTML = `<!DOCTYPE html>
       margin: 0 auto;
       padding: 40px 24px;
     }
-    .forge-bar {
+    .preview-bar {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: #161b22; border-bottom: 1px solid #30363d;
       padding: 8px 20px; display: flex; align-items: center; gap: 12px;
       font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px;
       color: #8b949e;
     }
-    .forge-bar .dot { width: 8px; height: 8px; border-radius: 50%%; background: #3fb950; }
-    .forge-bar .live { color: #3fb950; }
+    .preview-bar .dot { width: 8px; height: 8px; border-radius: 50%%; background: #3fb950; }
+    .preview-bar .live { color: #3fb950; }
     body { padding-top: 37px; }
   </style>
 </head>
 <body>
-  <div class="forge-bar">
+  <div class="preview-bar">
     <span class="dot"></span>
-    <span>⚡ forge preview</span>
+    <span>⚡ profilegen preview</span>
     <span class="live">● live</span>
     <span style="margin-left:auto; color:#484f58">auto-reloads on config.yml changes</span>
   </div>

@@ -13,11 +13,11 @@ var validateConfig string
 var validateCmd = &cobra.Command{
 	Use:   "validate",
 	Short: "Validate config.yml against the schema",
-	Long:  `Checks that your config.yml is valid before running forge build.`,
-	Example: `  forge validate
-  forge validate --config profile.yml`,
+	Long:  `Checks that your config.yml is valid before running profilegen build.`,
+	Example: `  profilegen validate
+  profilegen validate --config profile.yml`,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		fmt.Printf("  forge validate  %s\n\n", validateConfig)
+		fmt.Printf("  profilegen validate  %s\n\n", validateConfig)
 
 		cfg, err := config.Load(validateConfig)
 		if err != nil {

@@ -1,5 +1,4 @@
-# Forge config — https://github.com/miladmahmoodi/forge
-# Edit this file, then run: forge build
+# Profile config — edit this file, then push to regenerate README.md
 
 name: "Milad Mahmoodi"
 username: "miladmahmoodi"
@@ -81,16 +80,6 @@ projects:
       - backend
       - framework
 
-  - name: Forge
-    description: >
-      Developer profile engine that generates GitHub profiles from a single configuration.
-    url: https://github.com/miladmahmoodi/forge
-    language: Go
-    featured: true
-    tags:
-      - cli
-      - developer-tools
-      - github-profile
 
 timeline:
 

@@ -15,8 +15,8 @@ var initCmd = &cobra.Command{
 	Use:   "init",
 	Short: "Scaffold a new config.yml interactively",
 	Long:  `Creates a starter config.yml by asking a few questions about you.`,
-	Example: `  forge init
-  forge init --force`,
+	Example: `  profilegen init
+  profilegen init --force`,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		const dest = "config.yml"
 
@@ -24,7 +24,7 @@ var initCmd = &cobra.Command{
 			return fmt.Errorf("%s already exists. Use --force to overwrite", dest)
 		}
 
-		fmt.Println("  forge init")
+		fmt.Println("  profilegen init")
 		fmt.Println()
 
 		r := bufio.NewReader(os.Stdin)
@@ -48,8 +48,8 @@ var initCmd = &cobra.Command{
 		fmt.Println()
 		fmt.Println("  Next steps:")
 		fmt.Println("    1. Edit config.yml to add your projects, skills, and timeline")
-		fmt.Println("    2. Run  forge build  to generate your README.md")
-		fmt.Println("    3. Run  forge preview  to preview locally")
+		fmt.Println("    2. Run  profilegen build  to generate your README.md")
+		fmt.Println("    3. Run  profilegen preview  to preview locally")
 		return nil
 	},
 }
@@ -64,7 +64,7 @@ func buildInitConfig(name, username, role, company, location, website, twitter s
 	var sb strings.Builder
 
 	sb.WriteString("# Forge config — https://github.com/miladmahmoodi/miladmahmoodi\n")
-	sb.WriteString("# Edit this file, then run: forge build\n\n")
+	sb.WriteString("# Edit this file, then run: profilegen build\n\n")
 
 	sb.WriteString(fmt.Sprintf("name:     %q\n", name))
 	sb.WriteString(fmt.Sprintf("username: %q\n", username))

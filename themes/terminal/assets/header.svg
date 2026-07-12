@@ -1,5 +1,5 @@
-<svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Forge terminal header">
-  <title>Forge - Build developer profiles, not README files.</title>
+<svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Milad Mahmoodi - terminal profile">
+  <title>Milad Mahmoodi - Software Engineer</title>
   <style><![CDATA[
     .window   { fill: #0d1117; }
     .titlebar { fill: #161b22; }
@@ -51,29 +51,29 @@
   <circle cx="66" cy="18" r="6" fill="#3fb950"/>
 
   <!-- Title bar -->
-  <text x="400" y="23" text-anchor="middle" class="mono dim" font-size="12">forge - terminal - 80x24</text>
+  <text x="400" y="23" text-anchor="middle" class="mono dim" font-size="12">milad@github - terminal - 80x24</text>
 
   <!-- Login line -->
   <text x="20" y="68" class="mono dim" font-size="13">Last login: from github.com on pts/0</text>
 
   <!-- Static prompt -->
   <text x="20" y="96" font-size="14" class="mono">
-    <tspan class="u">milad</tspan><tspan class="at">@</tspan><tspan class="host">forge</tspan><tspan class="sym">:~$ </tspan><tspan class="cmd">forge build</tspan>
+    <tspan class="u">milad</tspan><tspan class="at">@</tspan><tspan class="host">github</tspan><tspan class="sym">:~$ </tspan><tspan class="cmd">cat README.md</tspan>
   </text>
 
-  <!-- Build output -->
-  <text x="20" y="118" class="mono out" font-size="12.5">  config    config.yml</text>
-  <text x="20" y="136" class="mono out" font-size="12.5">  theme     terminal</text>
-  <text x="20" y="154" class="mono out" font-size="12.5">  output    README.md (3.2 KB)</text>
-  <text x="20" y="172" class="mono ok"  font-size="12.5">  done in 2ms</text>
+  <!-- Output -->
+  <text x="20" y="118" class="mono out" font-size="12.5">  name      Milad Mahmoodi</text>
+  <text x="20" y="136" class="mono out" font-size="12.5">  role      Software Engineer</text>
+  <text x="20" y="154" class="mono out" font-size="12.5">  location  Tehran, Iran</text>
+  <text x="20" y="172" class="mono ok"  font-size="12.5">  status    open to work</text>
 
   <!-- Typing prompt -->
   <text x="20" y="200" font-size="14" class="mono">
-    <tspan class="u">milad</tspan><tspan class="at">@</tspan><tspan class="host">forge</tspan><tspan class="sym">:~$ </tspan><tspan class="cmd c1">h</tspan><tspan class="cmd c2">e</tspan><tspan class="cmd c3">l</tspan><tspan class="cmd c4">p</tspan>
+    <tspan class="u">milad</tspan><tspan class="at">@</tspan><tspan class="host">github</tspan><tspan class="sym">:~$ </tspan><tspan class="cmd c1">h</tspan><tspan class="cmd c2">e</tspan><tspan class="cmd c3">l</tspan><tspan class="cmd c4">p</tspan>
   </text>
 
   <!-- Blinking cursor -->
   <g class="slide">
-    <rect x="95" y="188" width="9" height="15" class="cursor blink" rx="1"/>
+    <rect x="103" y="188" width="9" height="15" class="cursor blink" rx="1"/>
   </g>
 </svg>

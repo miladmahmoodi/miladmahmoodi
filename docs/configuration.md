@@ -1,6 +1,6 @@
 # Configuration
 
-Forge reads a single `config.yml` file. Every field is optional except `name`, `username`, and `role`.
+profilegen reads a single `config.yml` file. Every field is optional except `name`, `username`, and `role`.
 
 ## Full Reference
 
@@ -67,7 +67,7 @@ contact:
 
 # ── Plugins ───────────────────────────────────────────────────────────────────
 plugins:
-  - name:    github-activity  # see: forge plugin list
+  - name:    github-activity  # see: profilegen plugin list
     enabled: true
     options:
       limit: 5
@@ -75,11 +75,11 @@ plugins:
 
 ## Validation
 
-Run `forge validate` to check your config before building:
+Run `profilegen validate` to check your config before building:
 
 ```bash
-forge validate
-forge validate --config path/to/config.yml
+profilegen validate
+profilegen validate --config path/to/config.yml
 ```
 
 ## Defaults

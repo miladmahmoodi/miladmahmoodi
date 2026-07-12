@@ -22,14 +22,14 @@ var buildCmd = &cobra.Command{
 
   config.yml → theme → plugins → README.md
 
-By default, forge build reads ./config.yml and writes ./README.md.`,
-	Example: `  forge build
-  forge build --config profile.yml --output README.md
-  forge build --dry-run`,
+By default, profilegen build reads ./config.yml and writes ./README.md.`,
+	Example: `  profilegen build
+  profilegen build --config profile.yml --output README.md
+  profilegen build --dry-run`,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		start := time.Now()
 
-		fmt.Println("  forge build")
+		fmt.Println("  profilegen build")
 		fmt.Printf("  config   %s\n", buildConfig)
 
 		result, err := generator.Generate(generator.Options{

@@ -1,27 +1,27 @@
 # CLI Reference
 
-## forge init
+## profilegen init
 
 Scaffold a `config.yml` interactively.
 
 ```bash
-forge init
-forge init --force   # overwrite existing config.yml
+profilegen init
+profilegen init --force   # overwrite existing config.yml
 ```
 
 Creates a starter `config.yml` by asking a few questions. Edit the file to add your projects, skills, and timeline.
 
 ---
 
-## forge build
+## profilegen build
 
 Generate `README.md` from `config.yml`.
 
 ```bash
-forge build
-forge build --config profile.yml
-forge build --output path/to/README.md
-forge build --dry-run    # print output without writing to disk
+profilegen build
+profilegen build --config profile.yml
+profilegen build --output path/to/README.md
+profilegen build --dry-run    # print output without writing to disk
 ```
 
 | Flag        | Short | Default      | Description                     |
@@ -32,13 +32,13 @@ forge build --dry-run    # print output without writing to disk
 
 ---
 
-## forge preview
+## profilegen preview
 
 Serve a live preview at `localhost:4000`.
 
 ```bash
-forge preview
-forge preview --port 8080
+profilegen preview
+profilegen preview --port 8080
 ```
 
 Watches `config.yml` for changes and rebuilds automatically.
@@ -50,25 +50,25 @@ Watches `config.yml` for changes and rebuilds automatically.
 
 ---
 
-## forge validate
+## profilegen validate
 
 Validate `config.yml` against the schema.
 
 ```bash
-forge validate
-forge validate --config path/to/config.yml
+profilegen validate
+profilegen validate --config path/to/config.yml
 ```
 
 Reports all validation errors. Exits with code 1 if invalid.
 
 ---
 
-## forge doctor
+## profilegen doctor
 
 Check your environment for common issues.
 
 ```bash
-forge doctor
+profilegen doctor
 ```
 
 Checks:
@@ -79,62 +79,62 @@ Checks:
 
 ---
 
-## forge theme list
+## profilegen theme list
 
 List all available themes.
 
 ```bash
-forge theme list
+profilegen theme list
 ```
 
 ---
 
-## forge theme install
+## profilegen theme install
 
 Install a remote theme.
 
 ```bash
-forge theme install minimal
-forge theme install github.com/user/forge-theme-retro
+profilegen theme install minimal
+profilegen theme install github.com/user/profilegen-theme-retro
 ```
 
 > Remote theme installation coming in v0.2.0. Until then, place custom themes in `./themes/<name>/`.
 
 ---
 
-## forge plugin list
+## profilegen plugin list
 
 List all available plugins.
 
 ```bash
-forge plugin list
+profilegen plugin list
 ```
 
 ---
 
-## forge plugin install
+## profilegen plugin install
 
 Install a community plugin.
 
 ```bash
-forge plugin install github-activity
+profilegen plugin install github-activity
 ```
 
 > Community plugin installation coming in v0.2.0.
 
 ---
 
-## forge publish
+## profilegen publish
 
 Build and push to GitHub in one command.
 
 ```bash
-forge publish
-forge publish --message "update profile"
-forge publish --dry-run
+profilegen publish
+profilegen publish --message "update profile"
+profilegen publish --dry-run
 ```
 
-Runs `forge build`, then:
+Runs `profilegen build`, then:
 
 ```bash
 git add README.md

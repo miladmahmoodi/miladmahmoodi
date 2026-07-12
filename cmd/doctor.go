@@ -12,9 +12,9 @@ import (
 var doctorCmd = &cobra.Command{
 	Use:   "doctor",
 	Short: "Check your environment for common issues",
-	Long:  `Inspects your environment and reports anything that might affect forge.`,
+	Long:  `Inspects your environment and reports anything that might affect profilegen.`,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		fmt.Println("  forge doctor")
+		fmt.Println("  profilegen doctor")
 	fmt.Println()
 
 		checks := []check{
@@ -40,7 +40,7 @@ var doctorCmd = &cobra.Command{
 
 		fmt.Println()
 		fmt.Printf("  os/arch   %s/%s\n", runtime.GOOS, runtime.GOARCH)
-		fmt.Printf("  forge     v%s\n", Version)
+		fmt.Printf("  profilegen     v%s\n", Version)
 
 		if !allOk {
 			fmt.Println()
@@ -60,7 +60,7 @@ type check struct {
 
 func checkFileExists(path string) error {
 	if _, err := os.Stat(path); os.IsNotExist(err) {
-		return fmt.Errorf("%s not found — run: forge init", path)
+		return fmt.Errorf("%s not found — run: profilegen init", path)
 	}
 	return nil
 }

@@ -1,6 +1,6 @@
 # Themes
 
-Forge ships six themes. Set your theme in `config.yml`:
+profilegen ships six themes. Set your theme in `config.yml`:
 
 ```yaml
 theme: terminal
@@ -18,7 +18,7 @@ theme: terminal
 | `hacker`    | Green-on-black matrix-inspired       | coming v0.2|
 
 ```bash
-forge theme list
+profilegen theme list
 ```
 
 ## Terminal Theme
@@ -83,7 +83,7 @@ Every template receives a `RenderData` struct:
 type RenderData struct {
     Config      *config.Config  // parsed config.yml
     GeneratedAt string          // build timestamp
-    Version     string          // forge version
+    Version     string          // profilegen version
 }
 ```
 

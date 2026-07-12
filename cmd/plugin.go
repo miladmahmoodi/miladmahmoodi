@@ -17,7 +17,7 @@ var pluginListCmd = &cobra.Command{
 	Use:   "list",
 	Short: "List available plugins",
 	RunE: func(cmd *cobra.Command, args []string) error {
-		fmt.Println("  forge plugin list")
+		fmt.Println("  profilegen plugin list")
 		fmt.Println()
 
 		for _, p := range plugin.BuiltinPlugins {
@@ -39,7 +39,7 @@ var pluginInstallCmd = &cobra.Command{
 	Args:  cobra.ExactArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
 		name := args[0]
-		fmt.Printf("  forge plugin install %s\n\n", name)
+		fmt.Printf("  profilegen plugin install %s\n\n", name)
 		fmt.Println("  Community plugin installation is coming in v0.2.0.")
 		return nil
 	},

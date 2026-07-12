@@ -1,18 +1,24 @@
-## `$ about`
+```
+{{.Config.Username}}@github:~$ about
 
-> **{{.Config.Name}}** — {{.Config.Role}}
-{{if .Config.Bio}}
-{{.Config.Bio}}
-{{end}}
-<br>
-{{if .Config.Location}}📍 {{.Config.Location}}{{end}}{{if and .Config.Location .Config.Website}} &nbsp;·&nbsp; {{end}}{{if .Config.Website}}🌐 [{{.Config.Website}}]({{.Config.Website}}){{end}}
+  name      {{.Config.Name}}
+  role      {{.Config.Role}}
+{{- if .Config.Location}}
+  location  {{.Config.Location}}
+{{- end}}
+{{- if .Config.Website}}
+  web       {{.Config.Website}}
+{{- end}}
+{{- if .Config.Bio}}
 
+  {{.Config.Bio}}
+{{- end}}
+
+{{.Config.Username}}@github:~$ _
+```
 {{if .Config.Socials}}
-<br>
 
 {{range .Config.Socials -}}
 [![{{.Platform}}](https://img.shields.io/badge/{{.Platform}}-{{.Handle}}-181717?style=flat-square&logo={{.Platform}}&logoColor=white)]({{.URL}})&nbsp;
 {{end}}
 {{end}}
-
----

@@ -1,13 +1,10 @@
-## `$ timeline`
-
 ```
-{{.Config.Username}}@forge:~$ timeline
+{{.Config.Username}}@github:~$ timeline
 {{range .Config.Timeline}}
 {{.Year}}  →  {{.Title | trim}}{{if .Description}}
         {{.Description | trim}}{{end}}
 {{- end}}
 
-{{.Config.Username}}@forge:~$ _
+{{.Config.Username}}@github:~$ _
 ```
 
----

@@ -20,21 +20,21 @@ go install github.com/miladmahmoodi/miladmahmoodi@latest
 
 ```bash
 # 1. Create a config.yml in your profile repo
-forge init
+profilegen init
 
 # 2. Edit config.yml with your details
 # (name, role, skills, projects, timeline)
 
 # 3. Generate your README.md
-forge build
+profilegen build
 
 # 4. Preview locally before pushing
-forge preview
+profilegen preview
 ```
 
 ## Your First config.yml
 
-After `forge init`, you'll have a `config.yml` like this:
+After `profilegen init`, you'll have a `config.yml` like this:
 
 ```yaml
 name:     "Your Name"
@@ -62,7 +62,7 @@ timeline:
     title: "Something important happened"
 ```
 
-Run `forge build` and your `README.md` is generated.
+Run `profilegen build` and your `README.md` is generated.
 
 ## Automatic Updates
 
@@ -86,8 +86,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
         with: { go-version: "1.26" }
-      - run: go build -o forge .
-      - run: ./forge build
+      - run: go build -o profilegen .
+      - run: ./profilegen build
       - run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

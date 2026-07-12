@@ -19,14 +19,14 @@ var (
 var publishCmd = &cobra.Command{
 	Use:   "publish",
 	Short: "Build README.md and push to GitHub",
-	Long: `Runs forge build, then commits and pushes the generated README.md.
+	Long: `Runs profilegen build, then commits and pushes the generated README.md.
 
 Requires git to be installed and the repository to have a remote configured.`,
-	Example: `  forge publish
-  forge publish --message "update profile"
-  forge publish --dry-run`,
+	Example: `  profilegen publish
+  profilegen publish --message "update profile"
+  profilegen publish --dry-run`,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		fmt.Println("  forge publish")
+		fmt.Println("  profilegen publish")
 
 		result, err := generator.Generate(generator.Options{
 			ConfigPath: publishConfig,
@@ -46,7 +46,7 @@ Requires git to be installed and the repository to have a remote configured.`,
 
 		msg := publishMessage
 		if msg == "" {
-			msg = fmt.Sprintf("chore: regenerate profile [forge %s] [skip ci]", time.Now().Format("2006-01-02"))
+			msg = fmt.Sprintf("chore: regenerate profile [profilegen %s] [skip ci]", time.Now().Format("2006-01-02"))
 		}
 
 		steps := [][]string{

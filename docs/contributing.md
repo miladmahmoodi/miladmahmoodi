@@ -1,12 +1,12 @@
 # Contributing
 
-Forge is open source. Contributions are welcome.
+profilegen is open source. Contributions are welcome.
 
 ## Development Setup
 
 ```bash
-git clone https://github.com/miladmahmoodi/forge
-cd forge
+git clone https://github.com/miladmahmoodi/profilegen
+cd profilegen
 go mod download
 make build
 ```
@@ -26,7 +26,7 @@ make lint
 ## Project Structure
 
 ```
-forge/
+profilegen/
 ├── cmd/               # CLI commands (Cobra)
 ├── internal/
 │   ├── config/        # Config parsing and validation
