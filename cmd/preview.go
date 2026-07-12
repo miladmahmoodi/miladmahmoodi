@@ -93,7 +93,7 @@ Changes to config.yml are detected automatically and the preview updates.`,
 		http.HandleFunc("/raw", func(w http.ResponseWriter, r *http.Request) {
 			content, _ := os.ReadFile(tmpFile)
 			w.Header().Set("Content-Type", "text/plain; charset=utf-8")
-			w.Write(content)
+			_, _ = w.Write(content)
 		})
 
 		// Serve theme assets (SVGs, etc.) relative to CWD.
