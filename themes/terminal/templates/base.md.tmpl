@@ -24,15 +24,25 @@
 
 {{template "about.md.tmpl" .}}
 {{- if .Config.Skills}}
+<br>
+
 {{template "stack.md.tmpl" .}}
 {{- end}}
 {{- if .Config.Projects}}
+<br>
+
 {{template "projects.md.tmpl" .}}
 {{- end}}
 {{- if .Config.Timeline}}
+<br>
+
 {{template "timeline.md.tmpl" .}}
 {{- end}}
 {{- if or .Config.Contact.Email .Config.Contact.Twitter .Config.Contact.Discord}}
+<br>
+
 {{template "contact.md.tmpl" .}}
 {{- end}}
+<br>
+
 {{template "secret.md.tmpl" .}}
